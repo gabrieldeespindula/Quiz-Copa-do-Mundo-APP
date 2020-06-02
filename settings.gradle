@@ -1,0 +1,2 @@
+rootProject.name='Quiz Copas do Mundo'
+include ':app'
