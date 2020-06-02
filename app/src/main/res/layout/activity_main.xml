@@ -10,25 +10,29 @@
     android:background="@drawable/background_menu">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="QUIZ WORLD CUP"
-        android:layout_gravity="center"
-        android:textSize="40sp"
-        android:layout_marginTop="30dp"/>
+        android:gravity="center_horizontal"
+        android:textSize="50sp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/bangersregular"
+        android:textColor="@color/colorTitle"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:text="START"
-        android:layout_marginTop="300dp"
-        android:textSize="25sp"/>
+        android:layout_marginTop="210dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/bangersregular"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:text="CREDITS"
         android:layout_marginTop="20dp"
-        android:textSize="25sp"/>
+        android:textSize="30sp"
+        android:fontFamily="@font/bangersregular"/>
 
 </LinearLayout>
