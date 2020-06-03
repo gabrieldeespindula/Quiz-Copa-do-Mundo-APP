@@ -6,6 +6,7 @@
     <color name="colorTitle">#1B0801</color>
     <color name="colorMenu">#FFFFFF</color>
     <color name="colorBackground">#D61A1A</color>
+    <color name="colorGreen">#03BC03</color>
 
 
 </resources>
