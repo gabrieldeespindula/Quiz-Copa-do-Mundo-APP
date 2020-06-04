@@ -2,9 +2,10 @@ package com.gabrieldeespindula.quizcopasdomundo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
-public class OneActivity extends AppCompatActivity {
+public class OneActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ViewHolder mViewHolder = new ViewHolder();
 
@@ -14,7 +15,15 @@ public class OneActivity extends AppCompatActivity {
         setContentView(R.layout.activity_one);
 
         this.mViewHolder.trueButton = findViewById(R.id.true_button);
-        this.mViewHolder.trueButton = findViewById(R.id.false_button);
+        this.mViewHolder.falseButton = findViewById(R.id.false_button);
+
+        this.mViewHolder.trueButton.setOnClickListener(this);
+        this.mViewHolder.falseButton.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
 
     }
 
