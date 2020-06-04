@@ -20,7 +20,6 @@
         android:textColor="@color/colorTitle"/>
 
     <Button
-        android:id="@+id/button_start"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:text="START"
@@ -31,7 +30,6 @@
         android:background="@drawable/custom_button"/>
 
     <Button
-        android:id="@+id/button_creditis"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:text="CREDITS"
