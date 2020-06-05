@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class ThreeActivity extends AppCompatActivity implements View.OnClickListener {
+public class FiveActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     private ViewHolder mViewHolder = new ViewHolder();
@@ -15,11 +15,11 @@ public class ThreeActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_three);
+        setContentView(R.layout.activity_five);
 
 
-        this.mViewHolder.trueButton = findViewById(R.id.true_three);
-        this.mViewHolder.falseButton = findViewById(R.id.false_three);
+        this.mViewHolder.trueButton = findViewById(R.id.true_five);
+        this.mViewHolder.falseButton = findViewById(R.id.false_five);
 
         this.mViewHolder.trueButton.setOnClickListener(this);
         this.mViewHolder.falseButton.setOnClickListener(this);
@@ -28,15 +28,14 @@ public class ThreeActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        Intent questionfour = new Intent(this, FourActivity.class);
+        Intent questionfinal = new Intent(this, FinalActivity.class);
         if (v.getId() == R.id.true_three) {
             Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();
+            CorrectConstants.five = 1;
         } else {
-            CorrectConstants.three = 1;
             Toast.makeText(this,"Right!", Toast.LENGTH_SHORT).show();
         }
-        startActivity(questionfour);
-
+        startActivity(questionfinal);
     }
 
     private static class ViewHolder{

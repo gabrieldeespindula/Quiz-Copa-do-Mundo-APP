@@ -7,14 +7,14 @@
     android:background="@drawable/background_menu"
     android:orientation="vertical"
     android:padding="15dp"
-    tools:context=".ThreeActivity">
+    tools:context=".FourActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/custom_text"
-        android:text="@string/third_question"
+        android:text="@string/fourth_question"
         android:textSize="50sp"
         android:gravity="center"
         android:fontFamily="@font/bangersregular"/>
@@ -26,7 +26,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/true_three"
+            android:id="@+id/true_four"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -36,7 +36,7 @@
             android:textSize="20sp"/>
 
         <Button
-            android:id="@+id/false_three"
+            android:id="@+id/false_four"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"

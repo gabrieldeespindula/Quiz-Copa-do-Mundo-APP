@@ -4,4 +4,7 @@
     <string name="option_false">False</string>
     <string name="first_question">England won the 1966 World Cup:</string>
     <string name="second_question">Italy has 3 world cups:</string>
+    <string name="third_question">Only Uruguay and Argentina have 2 world cup titles:</string>
+    <string name="fourth_question">The player who most often won the World Cup is Pelé, from Brazil:</string>
+    <string name="fifth_question">The first mascot in World Cup history was World Cup Willie, a lion footballer dressed in a United Kingdom flag shirt.</string>
 </resources>

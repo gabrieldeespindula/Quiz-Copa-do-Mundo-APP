@@ -3,5 +3,7 @@
     <string name="option_true">True</string>
     <string name="option_false">False</string>
     <string name="first_question">England won the 1966 World Cup:</string>
-    <string name="second_question">Italia has 3 world cups:</string>
+    <string name="second_question">Italy has 3 world cups:</string>
+    <string name="third_question">Only Uruguay and Argentina have 2 world cup titles:</string>
+    <string name="fourth_question">The player who most often won the World Cup is Pelé, from Brazil:</string>
 </resources>
