@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/custom_text"
-        android:text="@string/first_question"
+        android:text="@string/second_question"
         android:textSize="50sp"
         android:gravity="center"
         android:fontFamily="@font/bangersregular"/>
@@ -26,7 +26,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/true_button"
+            android:id="@+id/true_two"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -36,7 +36,7 @@
             android:textSize="20sp"/>
 
         <Button
-            android:id="@+id/false_button"
+            android:id="@+id/false_two"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
