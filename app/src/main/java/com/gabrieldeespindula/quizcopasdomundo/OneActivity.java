@@ -16,6 +16,7 @@ public class OneActivity extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_one);
 
+
         this.mViewHolder.trueButton = findViewById(R.id.true_button);
         this.mViewHolder.falseButton = findViewById(R.id.false_button);
 
@@ -28,7 +29,7 @@ public class OneActivity extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v) {
         Intent questiontwo = new Intent(this, TwoActivity.class);
         if (v.getId() == R.id.true_button) {
-            questiontwo.putExtra("correct", 1);
+            questiontwo.putExtra("correct: ", 1);
             Toast.makeText(this,"Right!", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();

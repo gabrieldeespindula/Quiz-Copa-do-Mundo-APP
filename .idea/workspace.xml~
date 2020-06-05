@@ -8,7 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="489d0aad-617d-4420-a432-41ca1defc13f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_two.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_two.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/gabrieldeespindula/quizcopasdomundo/OneActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/gabrieldeespindula/quizcopasdomundo/OneActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/gabrieldeespindula/quizcopasdomundo/TwoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/gabrieldeespindula/quizcopasdomundo/TwoActivity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +41,7 @@
       <list>
         <option value="resourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -60,14 +63,14 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\AndroidStudioProjects\QuizCopasdoMundo\app\src\main\res\drawable" />
       <recent name="C:\Users\Usuario\AndroidStudioProjects\QuizCopasdoMundo\app\src\main\res\font" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.gabrieldeespindula.quizcopasdomundo" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Usuario\AndroidStudioProjects\QuizCopasdoMundo\app\src\main\res\drawable" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\AndroidStudioProjects\QuizCopasdoMundo\app\src\main\res\font" />
     </key>
   </component>
