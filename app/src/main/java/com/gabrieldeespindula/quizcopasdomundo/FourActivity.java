@@ -29,11 +29,11 @@ public class FourActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Intent questionfive = new Intent(this, FiveActivity.class);
-        if (v.getId() == R.id.true_three) {
-            Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();
+        if (v.getId() == R.id.true_four) {
+            Toast.makeText(this,"Right!", Toast.LENGTH_SHORT).show();
             CorrectConstants.four = 1;
         } else {
-            Toast.makeText(this,"Right!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();
         }
         startActivity(questionfive);
     }
