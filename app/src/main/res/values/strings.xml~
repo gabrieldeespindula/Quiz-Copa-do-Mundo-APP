@@ -4,4 +4,5 @@
     <string name="option_false">False</string>
     <string name="first_question">England won the 1966 World Cup:</string>
     <string name="second_question">Italy has 3 world cups:</string>
+    <string name="third_question">Only Uruguay and Argentina have 2 world cup titles:</string>
 </resources>
