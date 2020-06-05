@@ -6,5 +6,5 @@ public class CorrectConstants {
     public static int three = 0;
     public static int four = 0;
     public static int five = 0;
-
+    public static int total = one + two + three + four + five;
 }
