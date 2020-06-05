@@ -32,7 +32,7 @@ public class ThreeActivity extends AppCompatActivity implements View.OnClickList
         if (v.getId() == R.id.true_three) {
             Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();
         } else {
-            CorrectConstants.two = 1;
+            CorrectConstants.three = 1;
             Toast.makeText(this,"Right!", Toast.LENGTH_SHORT).show();
         }
         startActivity(questionfour);
