@@ -32,7 +32,6 @@ public class TwoActivity extends AppCompatActivity implements View.OnClickListen
         if (v.getId() == R.id.true_two) {
             Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();
         } else {
-            CorrectConstants.two = 1;
             Toast.makeText(this,"Right!", Toast.LENGTH_SHORT).show();
         }
         startActivity(questionthree);

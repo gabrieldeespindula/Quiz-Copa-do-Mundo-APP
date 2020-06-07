@@ -31,7 +31,6 @@ public class FourActivity extends AppCompatActivity implements View.OnClickListe
         Intent questionfive = new Intent(this, FiveActivity.class);
         if (v.getId() == R.id.true_four) {
             Toast.makeText(this,"Right!", Toast.LENGTH_SHORT).show();
-            CorrectConstants.four = 1;
         } else {
             Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();
         }
