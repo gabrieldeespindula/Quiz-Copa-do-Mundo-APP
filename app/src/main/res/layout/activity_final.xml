@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FinalActivity">
+    tools:context=".FinalActivity"
+    android:background="@drawable/background_menu"
+    android:padding="15dp"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Result: "
+        android:fontFamily="@font/bangersregular"
+        android:background="@drawable/custom_text"
+        android:textSize="50sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bangersregular"
+        android:text="Thanks!"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="50sp"
+        android:textColor="@color/colorTitle"/>
+
+
+
+</LinearLayout>

@@ -26,13 +26,25 @@ public class TwoActivity extends AppCompatActivity implements View.OnClickListen
 
     }
 
+    public Double Correct(){
+        Bundle extras = getIntent().getExtras();
+        assert extras != null;
+        String value = extras.getString("one");
+        assert value != null;
+        return Double.valueOf(value);
+    }
+
     @Override
     public void onClick(View v) {
         Intent questionthree = new Intent(this, ThreeActivity.class);
         if (v.getId() == R.id.true_two) {
+            String string_value = String.valueOf(Correct());
+            questionthree.putExtra("two", string_value);
             Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();
         } else {
-            CorrectConstants.two = 1;
+            Double value_double = Correct() + 1;
+            String string_value = String.valueOf(value_double);
+            questionthree.putExtra("two", string_value);
             Toast.makeText(this,"Right!", Toast.LENGTH_SHORT).show();
         }
         startActivity(questionthree);

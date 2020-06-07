@@ -29,13 +29,13 @@ public class OneActivity extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v) {
         Intent questiontwo = new Intent(this, TwoActivity.class);
         if (v.getId() == R.id.true_button) {
-            CorrectConstants.one = 1;
             Toast.makeText(this,"Right!", Toast.LENGTH_SHORT).show();
+            questiontwo.putExtra("one", "1");
         } else {
             Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();
+            questiontwo.putExtra("one", "0");
         }
         startActivity(questiontwo);
-
     }
 
     private static class ViewHolder{
