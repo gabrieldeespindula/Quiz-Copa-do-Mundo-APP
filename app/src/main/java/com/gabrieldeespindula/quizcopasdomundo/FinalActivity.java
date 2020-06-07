@@ -15,6 +15,15 @@ public class FinalActivity extends AppCompatActivity {
 
         this.mViewHolder.textResult = findViewById(R.id.text_result);
 
+        getCorrect();
+
+    }
+
+    public void getCorrect(){
+        Bundle extras = getIntent().getExtras();
+        assert extras != null;
+        String value = String.valueOf(extras.getString("five"));
+        this.mViewHolder.textResult.setText(String.format("%s %s %s", "Result: ", value, "/5"));
     }
 
     private static class ViewHolder {

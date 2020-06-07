@@ -26,12 +26,25 @@ public class FiveActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    public Double Correct(){
+        Bundle extras = getIntent().getExtras();
+        assert extras != null;
+        String value = extras.getString("four");
+        assert value != null;
+        return Double.valueOf(value);
+    }
+
     @Override
     public void onClick(View v) {
         Intent questionfinal = new Intent(this, FinalActivity.class);
         if (v.getId() == R.id.true_five) {
+            Double value_double = Correct() + 1;
+            String string_value = String.valueOf(value_double);
+            questionfinal.putExtra("five", string_value);
             Toast.makeText(this,"Right!", Toast.LENGTH_SHORT).show();
         } else {
+            String string_value = String.valueOf(Correct());
+            questionfinal.putExtra("five", string_value);
             Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();
         }
         startActivity(questionfinal);
