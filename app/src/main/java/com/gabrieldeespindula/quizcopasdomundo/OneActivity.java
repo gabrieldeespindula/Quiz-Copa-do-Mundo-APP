@@ -30,11 +30,12 @@ public class OneActivity extends AppCompatActivity implements View.OnClickListen
         Intent questiontwo = new Intent(this, TwoActivity.class);
         if (v.getId() == R.id.true_button) {
             Toast.makeText(this,"Right!", Toast.LENGTH_SHORT).show();
+            questiontwo.putExtra("one", "1");
         } else {
             Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();
+            questiontwo.putExtra("one", "0");
         }
         startActivity(questiontwo);
-
     }
 
     private static class ViewHolder{
