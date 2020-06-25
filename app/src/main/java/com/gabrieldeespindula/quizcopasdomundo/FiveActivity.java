@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class FiveActivity extends AppCompatActivity implements View.OnClickListener {
@@ -15,11 +16,14 @@ public class FiveActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_five);
+        setContentView(R.layout.activity_questions);
 
 
-        this.mViewHolder.trueButton = findViewById(R.id.true_five);
-        this.mViewHolder.falseButton = findViewById(R.id.false_five);
+        this.mViewHolder.trueButton = findViewById(R.id.true_button);
+        this.mViewHolder.falseButton = findViewById(R.id.false_button);
+        this.mViewHolder.question = findViewById(R.id.question);
+
+        this.mViewHolder.question.setText(R.string.second_question);
 
         this.mViewHolder.trueButton.setOnClickListener(this);
         this.mViewHolder.falseButton.setOnClickListener(this);
@@ -37,7 +41,7 @@ public class FiveActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Intent questionfinal = new Intent(this, FinalActivity.class);
-        if (v.getId() == R.id.true_five) {
+        if (v.getId() == R.id.true_button) {
             Double value_double = Correct() + 1;
             String string_value = String.valueOf(value_double);
             questionfinal.putExtra("five", string_value);
@@ -53,6 +57,7 @@ public class FiveActivity extends AppCompatActivity implements View.OnClickListe
     private static class ViewHolder{
         Button trueButton;
         Button falseButton;
+        TextView question;
     }
 }
 
