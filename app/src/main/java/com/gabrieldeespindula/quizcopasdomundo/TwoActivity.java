@@ -15,11 +15,11 @@ public class TwoActivity extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_two);
+        setContentView(R.layout.activity_questions);
 
 
-        this.mViewHolder.trueButton = findViewById(R.id.true_two);
-        this.mViewHolder.falseButton = findViewById(R.id.false_two);
+        this.mViewHolder.trueButton = findViewById(R.id.true_button);
+        this.mViewHolder.falseButton = findViewById(R.id.false_button);
 
         this.mViewHolder.trueButton.setOnClickListener(this);
         this.mViewHolder.falseButton.setOnClickListener(this);
@@ -37,7 +37,7 @@ public class TwoActivity extends AppCompatActivity implements View.OnClickListen
     @Override
     public void onClick(View v) {
         Intent questionthree = new Intent(this, ThreeActivity.class);
-        if (v.getId() == R.id.true_two) {
+        if (v.getId() == R.id.true_button) {
             String string_value = String.valueOf(Correct());
             questionthree.putExtra("two", string_value);
             Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();

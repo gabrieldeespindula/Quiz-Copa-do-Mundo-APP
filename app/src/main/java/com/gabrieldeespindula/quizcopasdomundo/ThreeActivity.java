@@ -15,11 +15,11 @@ public class ThreeActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_three);
+        setContentView(R.layout.activity_questions);
 
 
-        this.mViewHolder.trueButton = findViewById(R.id.true_three);
-        this.mViewHolder.falseButton = findViewById(R.id.false_three);
+        this.mViewHolder.trueButton = findViewById(R.id.true_button);
+        this.mViewHolder.falseButton = findViewById(R.id.false_button);
 
         this.mViewHolder.trueButton.setOnClickListener(this);
         this.mViewHolder.falseButton.setOnClickListener(this);
@@ -37,7 +37,7 @@ public class ThreeActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         Intent questionfour = new Intent(this, FourActivity.class);
-        if (v.getId() == R.id.true_three) {
+        if (v.getId() == R.id.true_button) {
             String string_value = String.valueOf(Correct());
             questionfour.putExtra("three", string_value);
             Toast.makeText(this,"Wrong!", Toast.LENGTH_SHORT).show();

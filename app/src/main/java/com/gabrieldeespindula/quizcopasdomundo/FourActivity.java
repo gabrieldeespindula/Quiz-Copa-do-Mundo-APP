@@ -15,11 +15,11 @@ public class FourActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_four);
+        setContentView(R.layout.activity_questions);
 
 
-        this.mViewHolder.trueButton = findViewById(R.id.true_four);
-        this.mViewHolder.falseButton = findViewById(R.id.false_four);
+        this.mViewHolder.trueButton = findViewById(R.id.true_button);
+        this.mViewHolder.falseButton = findViewById(R.id.false_button);
 
         this.mViewHolder.trueButton.setOnClickListener(this);
         this.mViewHolder.falseButton.setOnClickListener(this);
@@ -38,7 +38,7 @@ public class FourActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Intent questionfive = new Intent(this, FiveActivity.class);
-        if (v.getId() == R.id.true_four) {
+        if (v.getId() == R.id.true_button) {
             Double value_double = Correct() + 1;
             String string_value = String.valueOf(value_double);
             questionfive.putExtra("four", string_value);
