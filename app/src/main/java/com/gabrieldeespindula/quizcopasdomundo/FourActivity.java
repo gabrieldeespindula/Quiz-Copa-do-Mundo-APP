@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class FourActivity extends AppCompatActivity implements View.OnClickListener {
@@ -20,6 +21,9 @@ public class FourActivity extends AppCompatActivity implements View.OnClickListe
 
         this.mViewHolder.trueButton = findViewById(R.id.true_button);
         this.mViewHolder.falseButton = findViewById(R.id.false_button);
+        this.mViewHolder.question = findViewById(R.id.question);
+
+        this.mViewHolder.question.setText(R.string.fourth_question);
 
         this.mViewHolder.trueButton.setOnClickListener(this);
         this.mViewHolder.falseButton.setOnClickListener(this);
@@ -54,6 +58,7 @@ public class FourActivity extends AppCompatActivity implements View.OnClickListe
     private static class ViewHolder{
         Button trueButton;
         Button falseButton;
+        TextView question;
     }
 }
 
