@@ -14,7 +14,7 @@ public class OneActivity extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_one);
+        setContentView(R.layout.activity_questions);
 
 
         this.mViewHolder.trueButton = findViewById(R.id.true_button);
